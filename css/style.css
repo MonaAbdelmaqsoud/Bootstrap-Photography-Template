@@ -1,43 +1,8 @@
+/*general styles*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.container-fluid{
-    width: 80%;
-}
-nav a{
-    font-weight: bold;
-}
-
-.nav-background{
-    background: rgba(170, 170, 142, 0.4);
-}
-.carousel-item{
-    position: relative;
-    
-}
-.carousel-inner, .carousel-item img{
-    height: 100vh;
-    min-height: 300px;
-    min-width: 500px;
-}
-
-.carousel-caption{
-    position: absolute;
-    width: 80%;
-    height: 30%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.carousel-item h1, .carousel-item p{
-    color: white;
-    font-weight: bold;
-}
-.carousel-item h1{
-    font-size: 64px;
 }
 
 .colored-p{
@@ -52,17 +17,18 @@ h2{
     font-weight: bold;
     color: rgb(73, 67, 42);
  }
+section{
+    padding: 70px 0;
+}
 
-.sec1 .container, .sec2 .container, .sec5 .container{
+/*section 1*/
+.sec1, .sec2 .container, .sec5 .container{
     text-align: center;
 }
 .sec2, .sec4{
-    background-color: rgba(140, 140, 96, 0.553);
+    background-color: rgba(141, 141, 106, 0.553);
 }
-.container{
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
+
 .sec1-icon{
     width: 40px;
     height: 40px;
@@ -112,9 +78,10 @@ h2{
     background-color: rgb(83, 77, 60);
     border: 2px solid rgb(201, 191, 153);
     border-radius: 30px;
-    color: rgb(201, 191, 153);   
+    color: rgb(201, 191, 153);
+    font-weight: bold;   
 }
-.sec2-card-button:hover{
+.sec2 .card:hover .sec2-card-button{
     background-color: rgb(200, 200, 160);
     border: 3px solid rgb(83, 77, 60);
     border-radius: 30px;
@@ -152,10 +119,12 @@ h2{
 /*section3 styles*/
 .sec3 img{
     height: 90%;
-    border:5px solid rgb(42, 42, 40);
-    border-radius: 30px;  
+    border:6px solid rgb(42, 42, 40);
+    border-radius: 20px;  
 }
-
+.sec3 .nav-link{  
+    border-radius: 20px; 
+}
 .sec3-nav{
     color: black;
 }
@@ -170,21 +139,28 @@ h2{
     border: 2px solid rgb(141, 130, 102);
     border-radius: 30px;
     background: rgb(42, 42, 40);
-    transition-duration: 0.3s;
 }
-
+.sec3 .tab-pane{
+    padding: 20px;
+}
 /*section 4*/
+
 .sec4 img{
-    border: 4px solid rgb(42, 42, 40);
-    border-radius: 20px;
-    
+    border-radius: 15px; 
+}
+.sec4 .nav-link{  
+    background: rgb(42, 42, 40);
+    border: 5px solid rgb(42, 42, 40);
+    border-radius: 20px; 
 }
 .sec4 .active{
-    background-color: rgb(42, 42, 40);
+    background: rgb(42, 42, 40);
     border-radius: 20px;
     color: white;
-    transition-duration: 0.3s;
-    
+}
+
+.sec4 .tab-pane{
+    padding: 20px;
 }
 .sec4-colored-p{
     font-weight: bold;
@@ -194,17 +170,21 @@ h2{
 	-webkit-text-fill-color: transparent;
 }
 /* section 5*/
+.sec5 .card{
+    height: 100%;
+}
 .sec5 img{
     opacity: 0.6;
     border-radius: 20px;
+    height: 100%;
+    width: 100%;
 }
 .sec5-card-content{
-    padding-top: 90%;
+    padding-top: 90%;  
     color: white;
     text-align: left;
     border:3px solid rgb(42, 42, 40);
-    border-radius: 20px;
-    
+    border-radius: 20px;  
 }
 .sec5-card-button{
     width: 100px;
@@ -212,16 +192,18 @@ h2{
     background-color: rgb(83, 77, 60);
     border: 2px solid rgb(201, 191, 153);
     border-radius: 30px;
-    color: rgb(201, 191, 153);   
+    color: rgb(201, 191, 153);  
+    font-weight: bold; 
 }
-.sec5-card-button:hover{
+.sec5 .card:hover .sec5-card-button{
     background-color: rgb(200, 200, 160);
     border: 3px solid rgb(83, 77, 60);
     border-radius: 30px;
     color: rgb(83, 77, 60);
+    
 }
 
-.sec5 .card:hover{
+.sec5 .card:hover {
     transform: scale(1.1);
     transition-duration: 0.5s; 
 }
@@ -231,75 +213,4 @@ h2{
 }
 
 
-/* footer styles */
-footer{
-    background: #000000;
-    color: white;
-    padding: 20px;
-}
-
-footer a{
-    text-decoration: none;
-    color: white;
-    margin-bottom: 20px;
-}
-
-footer a:hover{
-    color: rgb(151, 151, 125);;
-}
-
-footer li{
-    list-style: none;
-}
-.footer-sec1{
-    margin: 50px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #787676;   
-}
-.footer-main-heading{
-    font-size: 28px;
-    font-weight: bold;
-    font-family: sans-serif;
-    
-}
-.footer-button{
-    width: 250px;
-    height: 70px;
-    margin-left: 20px;
-    color: white;
-    font-weight: bold;
-    background-color: #000000;
-    border: 3px solid rgb(255, 255, 255);
-    border-radius: 40px;
-}
-.footer-button:hover{
-    background-color: rgb(151, 151, 125);
-    border: 3px solid rgb(151, 151, 125);
-    transition-duration: 0.5s;
-}
-
-.footer-sec2{
-    margin: 50px;
-    padding-bottom: 60px;
-     
-}
-.footer-sub-heading{  
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    
-}
-   
-.fixed-link{
-    width: 45px;
-    height: 45px;
-    padding-top: 6px;
-    padding-left: 1px;
-    border: 4px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    bottom: 50px;
-    right: 40px;
-    position: fixed;
-    text-align: center;
-}
 
